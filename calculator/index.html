@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="calculator-body">
+                <div class="screen">
+                    <p id="result">0</p>
+                </div>
+                <div class="error-box">
+                    <p><small id="error"></small></p>
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <input type="number" id="numone" class="form-control" placeholder="Enter your first number">
+                        </div>
+                        <div class="col-lg-4">
+                            <select id="operator" class="form-select">
+                                <option value="+">+ (plus)</option>
+                                <option value="-">- (minus)</option>
+                                <option value="*">* (multiply)</option>
+                                <option value="/">/ (devide)</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="number" id="numtwo" class="form-control" placeholder="Enter your second number">
+                        </div>
+                        <div class="col-lg-12 text-center mt-5">
+                            <button type="button" id="calculate" class="btn btn-secondary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="asset/js/main.js"></script>
+</body>
+</html>
